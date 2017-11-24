@@ -13,10 +13,20 @@ import org.json.JSONObject;
 public class paypalheresdk extends CordovaPlugin {
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("coolMethod")) {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException 
+    {
+        if (action.equals("coolMethod")) 
+        {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
+            
+            return true;
+        }
+        else if (action.equals("getMessage")) 
+        {
+            String message = args.getString(0); 
+            this.echo(message, callbackContext);
+
             return true;
         }
         return false;
@@ -26,6 +36,18 @@ public class paypalheresdk extends CordovaPlugin {
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
         } else {
+            callbackContext.error("Expected one non-empty string argument.");
+        }
+    }
+
+    private void getMessage(String message, CallbackContext callbackContext) 
+    {
+        if (message != null && message.length() > 0) 
+        { 
+            callbackContext.success(message);
+        } 
+        else 
+        {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }

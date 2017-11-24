@@ -4,13 +4,13 @@
     <name>PayPalHereSDK</name>
     <keyword>ionic,cordova,paypal,here,sdk,paypalheresdk</keyword>
 
-    <js-module name="paypalheresdk" src="www/paypalheresdk.js">
+    <js-module name="PalPalHereSDK" src="www/paypalheresdk.js">
       	<clobbers target="paypalheresdk" />
    	</js-module>
 
    	<platform name="android">
       	<config-file parent="/*" target="res/xml/config.xml">
-         	<feature name="paypalheresdk">
+         	<feature name="PalPalHereSDK">
             	<param name="android-package" value="cordova-plugin-paypalheresdk.paypalheresdk" />
          	</feature>
       	</config-file>
@@ -20,7 +20,7 @@
 
    	<platform name="ios">
       	<config-file parent="/*" target="config.xml">
-         	<feature name="paypalheresdk">
+         	<feature name="PalPalHereSDK">
             	<param name="ios-package" value="paypalheresdk" />
          	</feature>
       	</config-file>

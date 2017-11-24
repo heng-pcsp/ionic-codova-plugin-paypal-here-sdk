@@ -1,10 +1,10 @@
 var exec = require('cordova/exec');
 
-var PayPal = function() {};
+var PalPalHereSDK = function() {};
 
-PayPal.getTest = function (arg0, success, error) 
+PalPalHereSDK.getMessage = function () 
 {
-	exec(success, error, 'PalPal Here SDK', 'coolMethod', [arg0]);
+	exec(null, null, 'PalPalHereSDK', 'getMessage', []);
 };
 
-module.exports = PayPal;
+module.exports = PalPalHereSDK;
