@@ -1,5 +1,5 @@
 {
-  "name": "paypalheresdk",
+  "name": "PayPalHereSDK",
   "version": "0.0.1",
   "description": "Cordova Plugin PayPal Here SDK",
   "cordova": {
