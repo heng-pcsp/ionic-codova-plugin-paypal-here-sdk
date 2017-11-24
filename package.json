@@ -1,0 +1,24 @@
+{
+  "name": "paypalheresdk",
+  "version": "0.0.1",
+  "description": "Cordova Plugin PayPal Here SDK",
+  "cordova": {
+    "id": "cordova-plugin-paypalheresdk",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heng-pcsp/codova-plugin-paypal-here-sdk.git"
+  },
+  "keywords": [
+    "cordova",
+    "ionic",
+    "paypal",
+    "here",
+    "sdk",
+    "payplaheresdk"
+  ],
+  "author": "Phin Heng"
+}
