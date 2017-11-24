@@ -5,12 +5,13 @@
   "cordova": {
     "id": "cordova-plugin-paypalheresdk",
     "platforms": [
+      "ios",
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heng-pcsp/codova-plugin-paypal-here-sdk.git"
+    "url": "git+https://github.com/heng-pcsp/ionic-codova-plugin-paypal-here-sdk.git"
   },
   "keywords": [
     "cordova",
