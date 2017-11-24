@@ -1,16 +1,21 @@
 var exec = require('cordova/exec');
 
-var PalPalHereSDK = function() {};
+function PalPalHereSDK() {};
 
-PalPalHereSDK.getMessage = function () 
+PalPalHereSDK.prototype.getMessage = function () 
 {
 	exec(null, null, 'paypalheresdk', 'getMessage', []);
 };
 
-PalPalHereSDK.greet = function (name, successCallback, errorCallback) 
+PalPalHereSDK.prototype.greet = function (name, successCallback, errorCallback) 
 {
 	exec(successCallback, errorCallback, 'paypalheresdk', 'greet', [name]);
 };
 
+module.exports = new PalPalHereSDK();
 
-module.exports = PalPalHereSDK;
+
+document.prototype.addEventListener('deviceready', function () 
+{
+    
+}, false);

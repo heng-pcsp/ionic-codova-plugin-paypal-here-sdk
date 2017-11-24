@@ -2,10 +2,12 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-paypalheresdk" version="0.0.1">
     
     <name>PayPalHereSDK</name>
-    <keyword>ionic,cordova,paypal,here,sdk,paypalheresdk</keyword>
+    <keyword>ionic,cordova,paypal,here,sdk,swiper,paypalheresdk</keyword>
 
     <js-module name="paypalheresdk" src="www/paypalheresdk.js">
-      	<clobbers target="paypalheresdk" />
+        <clobbers target="cordova.plugins.paypal.swiper" />
+        <clobbers target="window.plugins.paypal.swiper" />
+        <clobbers target="window.paypal.swiper" />
    	</js-module>
 
    	<platform name="android">
