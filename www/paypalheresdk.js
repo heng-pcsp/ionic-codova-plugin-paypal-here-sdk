@@ -4,7 +4,7 @@ var PalPalHereSDK = function() {};
 
 PalPalHereSDK.getMessage = function () 
 {
-	exec(null, null, 'PalPalHereSDK', 'getMessage', []);
+	exec(null, null, 'palpalheresdk', 'getMessage', []);
 };
 
 module.exports = PalPalHereSDK;
